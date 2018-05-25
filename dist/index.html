@@ -11,24 +11,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<link rel="stylesheet" type="text/css" href="/dist/css/main.css">
 
+    <style>
+
+    body {
+            background-color: #d9534f;
+        }
+    p {
+      font-family: Arial;
+      color: #FFFFFF;
+      padding: 0px 120px
+    }
+    h1 {
+      font-family: Arial;
+      color: #FFFFFF;
+      padding: 0px 120px
+    }
+    h2 {
+      font-family: Arial;
+      color: #FFFFFF;
+      padding: 0px 120px
+    }
+    ul {
+      font-family: Arial;
+      color: #FFFFFF;
+      padding: 0px 120px
+    }
+    .jumbotron{
+        background-color:#428bca;
+        color:blue;
+    }
+
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: $red;
+      background-clip: border-box;
+      border: $card-border-width solid $card-border-color;
+      @include border-radius($card-border-radius);
+
+      > hr {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      > .list-group:first-child {
+        .list-group-item:first-child {
+          @include border-top-radius($card-border-radius);
+        }
+      }
+
+      > .list-group:last-child {
+        .list-group-item:last-child {
+          @include border-bottom-radius($card-border-radius);
+        }
+      }
+    }
+    </style>
 
   </head>
 
 
   <body class="container">
 
-    <div class="container">
-    <div class="page-header">
-    <h1 class="page-header">Vote Severus Snape for Constable!</h1>
 
-     <div class="container">
+      <div class="jumbotron">
+        <h1 class="jumbotron">Vote Severus Snape for Constable!</h1>
+      </div>
+
+    <div class="card">
         <p>Severus Snape is the right wizard for the job. He does not believe in caddling the weak or the wicked, and will do the right thing no matter the cost.
         </p>
+    </div>
 
 
-      		<div class="container">
-      			<h2>Qualifications</h2>
-      			<ul>
+      		<div class="card">
+      			<h2 class="card">Qualifications</h2>
+          </div>
+          <div class="list-group:first-child">
+      			<ul class="list-group:first-child">
       				<li>Executed undercover work.</li>
       				<li>Decades teaching wizarding youth.</li>
               <li>Facilitated the defeat of the Dark Lord.</li>
@@ -36,14 +100,19 @@
             </ul>
 
 
-      		<div class="container">
-      			<h2>Platform</h2>
-      			<ul>
+      		<div class="card">
+      			<h2 class="card">Platform</h2>
+          </div>
+          <div class="list-group:first-child">
+      			<ul class="list-group:first-child">
       				<li>Crack down on young wizard offenders.</li>
       				<li>Serve outstanding warrants to old Deatheaters.</li>
               <li>Arrest wizarding hooligans no matter their last name.</li>
-
       			</ul>
+          </div>
+
+<br>
+</br>
 
 <img src="<img src="images/karpic.jpg" alt="Snape for Constable" class="center"/>
 
